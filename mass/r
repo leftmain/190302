@@ -1,0 +1,18 @@
+#!/bin/bash
+file=/home/username/Downloads/nv_10000000-8.txt
+number=10000000
+#./bubble $file $number
+#./check
+#./min_sort $file $number
+#./check
+#./lin_sort $file $number
+#./check
+#./bin_sort $file $number
+#./check
+#./merge $file $number
+#./check
+./quick $file $number
+./check
+./heap $file $number
+./check
+
