@@ -7,7 +7,8 @@ void merge_sort(T&, T&, int);
 void merge(Student *, Student *, Student *, int, int);
 
 void sort(T& a, int n) {
-	auto b = std::make_unique<Student []>(n);
+//	auto b = std::make_unique<Student []>(n);
+	auto b = std::unique_ptr<Student []>(new Student[n]);
 	if (!b) {
 		printf("Not enough memory\n");
 		return;

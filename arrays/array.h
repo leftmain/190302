@@ -9,7 +9,8 @@ template <class T>
 err_code read_array(std::unique_ptr<T []>& a, int n, const char * name) {
 	FILE * fp;
 
-	a = std::make_unique<T []>(n);
+//	a = make_unique<T []>(n);
+	a = std::unique_ptr<T []>(new T[n]);
 	if (!a) {
 		printf("Not enough memory\n");
 		return MEM_ERR;

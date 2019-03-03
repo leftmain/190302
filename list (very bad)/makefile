@@ -1,5 +1,5 @@
 # flags
-F = -g -c
+F = -O3 -c -std=c++11
 S = main.o student.o
 
 all: a

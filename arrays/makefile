@@ -1,5 +1,5 @@
 # flags
-F = -O3 -c
+F = -O3 -c -std=c++11
 S = main.o student.o
 
 all: bubble min_sort lin_sort bin_sort merge quick heap

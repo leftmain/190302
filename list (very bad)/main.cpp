@@ -49,9 +49,9 @@ int main(int argc, char ** argv) {
 	t = clock();
 //	l.bubble();
 //	l.min_sort();
-//	l.lin_sort();
+	l.lin_sort();
 //	l.merge_sort();
-	l.quick();
+//	l.quick();
 	t = (clock() - t) / CLOCKS_PER_SEC;
 	l.print();
 #ifdef DEBUG

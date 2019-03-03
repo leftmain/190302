@@ -34,7 +34,7 @@ template <class T>
 class Node : public T
 {
 private:
-	std::unique_ptr<Node<T> *> next;
+	std::unique_ptr<Node<T>> next;
 
 public:
 	Node(const char * n = 0, int v = 0) : T(n, v) {}
@@ -47,7 +47,7 @@ public:
 	}
 	Node<T> * get_next() const { return *next; }
 	void set_next(Node<T> * n) { *next = n; }
-	err_code init_next(const Node<T>& a) { next = std::make_unique<Node<T> *>(a); if (!next) return MEM_ERR; return ALL_RIGHT; }
+	err_code init_next(const Node<T>& a) { next = std::make_unique<Node<T>>(a); if (!next) return MEM_ERR; return ALL_RIGHT; }
 };
 */
 
